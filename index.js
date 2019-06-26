@@ -16,7 +16,7 @@ function setCart(c){
 
 function addToCart(item){
     var shopping={
-        itemName: [item],
+        itemName: item,
         itemPrice:  Math.floor(Math.random() * Math.floor(100))
     }
     
