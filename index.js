@@ -1,47 +1,47 @@
-var cart = [];
+// var cart = [];
 
-function getCart(){ return cart;}
+// function getCart(){ return cart;}
 
-function setCart(c){
-  cart = c;
-  return cart;
-}
+// function setCart(c){
+//   cart = c;
+//   return cart;
+// }
 
-/*1) addToCart() can add items to the cart
-2) addToCart() turns items into JavaScript objects before adding them to the cart
-3) addToCart() properly structures the cart item as object with a key of `itemName` and the corresponding value { itemName: itemName } format
-4) addToCart() sets the price (integer between 1 and 100) on the cart object using the key `price`
-5) addToCart() chooses the price at random
-6) addToCart() returns a message indicating that the item has been added*/
+// /*1) addToCart() can add items to the cart
+// 2) addToCart() turns items into JavaScript objects before adding them to the cart
+// 3) addToCart() properly structures the cart item as object with a key of `itemName` and the corresponding value { itemName: itemName } format
+// 4) addToCart() sets the price (integer between 1 and 100) on the cart object using the key `price`
+// 5) addToCart() chooses the price at random
+// 6) addToCart() returns a message indicating that the item has been added*/
 
-function addToCart(item){
-    var shopping={
-        itemName: item,
-        itemPrice:  Math.floor(Math.random() * Math.floor(100))
-    }
-    cart.push(shopping)
-    return `${shopping.itemName} has been added to your cart.`;
-}
+// function addToCart(item){
+//     var shopping={
+//         itemName: item,
+//         itemPrice:  Math.floor(Math.random() * Math.floor(100))
+//     }
+//     cart.push(shopping)
+//     return `${shopping.itemName} has been added to your cart.`;
+// }
 
-/*1) viewCart() prints 'Your shopping cart is empty.' if the cart is empty
-2) viewCart() correctly prints a one-item cart
-3) viewCart() correctly prints a two-item cart
-4) viewCart() correctly prints a three-or-more-item cart*/
+// /*1) viewCart() prints 'Your shopping cart is empty.' if the cart is empty
+// 2) viewCart() correctly prints a one-item cart
+// 3) viewCart() correctly prints a two-item cart
+// 4) viewCart() correctly prints a three-or-more-item cart*/
 
-function viewCart(){
-    if(!getCart().length){
-        return 'Your shopping cart is empty.'
-    } else {
-        let arrCart=[];
-        for(let i = 0; i < getCart().length; i++){
-            arrCart.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
+// function viewCart(){
+//     if(!getCart().length){
+//         return 'Your shopping cart is empty.'
+//     } else {
+//         let arrCart=[];
+//         for(let i = 0; i < getCart().length; i++){
+//             arrCart.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
                       
-        }
+//         }
         
-        return `In your cart, You have ${arrCart.join(', and ')}.`
-    }
+//         return `In your cart, You have ${arrCart.join(', and ')}.`
+//     }
     
-}
+// }
 
 
 
