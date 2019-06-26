@@ -29,7 +29,7 @@ function addToCart(item){
 4) viewCart() correctly prints a three-or-more-item cart*/
 
 function viewCart(){
-  
+  if(!getCart())
 }
 
 
