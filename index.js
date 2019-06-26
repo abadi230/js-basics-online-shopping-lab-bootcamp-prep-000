@@ -24,7 +24,8 @@ function addToCart(item){
 }
 
 1) viewCart() prints 'Your shopping cart is empty.' if the cart is empty
-
+ 2) viewCart() correctly prints a one-item cart
+ 
 
 
 
