@@ -23,6 +23,7 @@ function addToCart(item){
     return `${shopping.itemName} has been added to your cart.`;
 }
 
+1) viewCart() prints 'Your shopping cart is empty.' if the cart is empty
 
 
 
