@@ -1,5 +1,12 @@
 var cart = [];
 
+function addToCart(item){
+    var shopping={
+        itemName: [item],
+        itemPrice:  Math.floor(Math.random() * Math.floor(100))
+    }
+    return shopping;
+}
 
 
 
