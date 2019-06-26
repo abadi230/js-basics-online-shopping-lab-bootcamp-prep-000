@@ -58,6 +58,7 @@ function addToCart(item){
 
 
 
+
 // var cart = [];
 
 // function getCart() {
