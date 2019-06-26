@@ -34,7 +34,7 @@ function viewCart(){
     } else {
         let arrCart=[];
         for(let i = 0; i < getCart().length; i++){
-            arrCart.push(`${getCart()[i].itemName} at ${getCart()[i].itemPrice}`);
+            arrCart.push(`${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
                       
         }
         
