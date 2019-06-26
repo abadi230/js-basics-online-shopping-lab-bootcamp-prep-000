@@ -9,6 +9,7 @@ function setCart(c){
 
 1) addToCart() can add items to the cart
 2) addToCart() turns items into JavaScript objects before adding them to the cart
+3) addToCart() properly structures the cart item as object with a key of `itemName` and the corresponding value { itemName: itemName } format
 
 function addToCart(item){
     var shopping={
