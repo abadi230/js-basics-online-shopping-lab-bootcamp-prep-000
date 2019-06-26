@@ -11,6 +11,8 @@ function setCart(c){
 2) addToCart() turns items into JavaScript objects before adding them to the cart
 3) addToCart() properly structures the cart item as object with a key of `itemName` and the corresponding value { itemName: itemName } format
 4) addToCart() sets the price (integer between 1 and 100) on the cart object using the key `price`
+5) addToCart() chooses the price at random
+
 function addToCart(item){
     var shopping={
         itemName: [item],
