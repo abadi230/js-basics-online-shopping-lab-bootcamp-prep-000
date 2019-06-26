@@ -58,14 +58,16 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if(!cart.length){
-    return `That item is not in your cart.`;
-  } else {
-    return cart.splice(1,1);
-  }
+  // if(!cart.length){
+  //   return `That item is not in your cart.`;
+  // } else if(cart.length){
+    var itemToRemove= searshItem(item)
+   
+    
+    return itemToRemove ? removeItem(itemToRemove) : notifyUserThereIsNoItemToRemove();
   
 }
-
+//itemToRemove ? removeItemFromCart(itemToRemove) : 'That item is not in your cart.'
 function placeOrder(cardNumber) {
   // write your code here
   if(!cardNumber){
@@ -77,3 +79,21 @@ function placeOrder(cardNumber) {
     return `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`
   }
 }
+
+
+
+
+function searshItem(itemName){
+  var result;
+  for(var i=0; i< getCart().length; i++){
+    if(getCart()[i].itemName === itemName){ result = getCart()[i]; }
+    
+  }
+  return result;
+}
+function removeItem(itemToremove){
+  var x = cart.indexOf(itemToremove);
+  getCart().splice(x,1);
+}
+
+
