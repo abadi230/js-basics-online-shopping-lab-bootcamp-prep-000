@@ -3,7 +3,7 @@ var cart = [];
 function getCart(){ return cart;}
 
 function setCart(c){
-  cart.push(c);
+  cart = c;
   return cart;
 }
 
