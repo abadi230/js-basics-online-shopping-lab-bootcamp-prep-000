@@ -6,6 +6,8 @@ function setCart(c){
   cart.push(c);
   return cart;
 }
+
+1) addToCart() can add items to the cart
 function addToCart(item){
     var shopping={
         itemName: [item],
