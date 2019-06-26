@@ -1,5 +1,4 @@
-var cart;
-cart= [];
+var cart = [];
 
 
 
