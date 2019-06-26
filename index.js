@@ -29,9 +29,19 @@ function addToCart(item){
 4) viewCart() correctly prints a three-or-more-item cart*/
 
 function viewCart(){
-  if(!getCart())
+    if(!getCart().length){
+        return 'Your shopping cart is empty.'
+    } else {
+        let arrCart=[];
+        for(let i = 0; i < getCart().length; i++){
+            arrCart.push(`${getCart()[i].itemName} at ${getCart()[i].itemPrice}`);
+                      
+        }
+        
+        return `In your cart, You have ${arrCart.join(', and ')}.`
+    }
+    
 }
-
 
 
 
