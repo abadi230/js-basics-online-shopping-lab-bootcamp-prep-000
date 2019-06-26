@@ -8,6 +8,8 @@ function setCart(c){
 }
 
 1) addToCart() can add items to the cart
+2) addToCart() turns items into JavaScript objects before adding them to the cart
+
 function addToCart(item){
     var shopping={
         itemName: [item],
