@@ -19,7 +19,7 @@ function addToCart(item){
         itemName: [item],
         itemPrice:  Math.floor(Math.random() * Math.floor(100))
     }
-    cart.push(shopping)
+    cart.push(shopping.itemName)
     return `${cart} has been added to your cart.`;
 }
 
